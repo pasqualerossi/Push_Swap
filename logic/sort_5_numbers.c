@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 14:00:57 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 15:49:20 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/20 16:10:49 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,10 @@ void	sort_5_numbers(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *
 		if (numbers_in_stack_a[1] == 3)
 		{	
 			first_stack(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
+		}
 		else if (numbers_in_stack_a[1] == 4)
+		{
 			second_stack(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-
+		}
+	}
+}

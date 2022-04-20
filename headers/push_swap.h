@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:11:13 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 13:02:56 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/20 16:20:07 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,14 @@ void	free_stacks(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *num
 void    ft_reallocation(long *pointer, int startsize, int newsize);
 void	parameters(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
-//sort numbers
+//sort 3 numbers
 void	sort_3_numbers(long *stack_a, int *numbers_in_stack_a);
 
+//sort 5 numbers and all of the functions in that file
+void	sort_5_numbers(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
+void	rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a);
+void	reserve_rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a);
+void	first_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
+void	second_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
 #endif
