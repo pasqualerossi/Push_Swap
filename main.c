@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:23:09 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/19 14:27:26 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 12:16:22 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,10 +67,25 @@ int	main(int argc, char **argv)
 {
 	long	*stack_a;
 	long	*stack_b;
-	int		*sa;
-	int		*sb;
+	int		*numbers_in_stack_a;
+	int		*numbers_in_stack_b;
 
-	sa = (int *)malloc(2 * sizeof(int));
-	sb = (int *)malloc(sizeof(int));
-	check_parameters(argc, argv, sa, sb);
-	set_numbers(sa, sb, argc);
+	numbers_in_stack_a = (int *)malloc(2 * sizeof(int));
+	numbers_in_stack_b = (int *)malloc(sizeof(int));
+	check_parameters(argc, argv, numbers_in_stack_a, numbers_in_stack_b);
+	set_numbers(numbers_in_stack_a, numbers_in_stack_b, argc);
+	stack_a = (long *)malloc(sizeof(long) * stack_size(argc, argv));
+	stack_b = (long *)malloc(sizeof(long) * stack_size(argc, argv));
+	if ((seperating_input_numbers(stack_a, numbers_in_stack_a, argv) == -1) || (is_stack_sorted(stack_a, numbers_in_stack_a) == 0))
+		free_stacks(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
+	if ((numbers_in_stack_a[1] == 2) && (stack_a[0] > stack_a[1]))
+		rotate_stack_a(stack_a, numbers_in_stack_a);
+	else if (numbers_in_stack_a[1] == 3)
+		sort_3_numbers(stack_a, numbers_in_stack_a);
+	else if (numbers_in_stack_a[1] == 5)
+		sort_5_numbers(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
+	else
+		sort_beyond_3_and_5_numbers(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
+	free_stacks(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
+	return (0);
+}
