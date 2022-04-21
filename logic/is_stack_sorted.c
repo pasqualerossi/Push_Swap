@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 15:13:12 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/19 16:36:10 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:44:08 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	is_stack_sorted(long *stack_a, int *numbers_in_stack_a)
 {

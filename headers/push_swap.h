@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:11:13 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/21 10:54:41 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 16:00:01 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 # define PUSH_SWAP_H
 
 # include <unistd.h>
+# include <string.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <errno.h>
 
 //pa (push stack a) and pb (push stack b)
 
@@ -57,6 +59,7 @@ int		stack_size(int argc, char **argv);
 int		numbers_input(long *stack_a, int *numbers_in_stack_a, char **argv, char**numbers_list);
 int		standard_input(long *stack_a, int *numbers_in_stack_a, char **argv);
 int		seperating_input_numbers(long *stack_a, int *numbers_in_stack_a, char **argv);
+int		is_stack_sorted(long *stack_a, int *numbers_in_stack_a);
 
 void	free_string(char **str);
 void	free_stacks(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);

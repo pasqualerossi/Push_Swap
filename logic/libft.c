@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:28:32 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 12:30:14 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:44:19 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	ft_strlen(const char *str)
 {

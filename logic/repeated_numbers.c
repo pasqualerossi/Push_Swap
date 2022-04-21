@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:44:23 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 12:38:22 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:45:09 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	repeated_numbers(long *stack_a, int numbers_in_stack_a)
 {

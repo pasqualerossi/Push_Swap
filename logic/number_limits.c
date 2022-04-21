@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:39:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 12:39:32 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:44:41 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	number_limits(long *stack_a, int numbers_in_stack_a)
 {

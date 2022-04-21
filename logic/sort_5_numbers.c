@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 14:00:57 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 16:10:49 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:45:44 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 void	rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a)
 {

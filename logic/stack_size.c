@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 16:36:38 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/19 16:38:32 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:46:17 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	stack_size(int argc, char **argv)
 {

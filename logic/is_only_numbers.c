@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:54:27 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 12:32:04 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:43:59 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 int	is_only_numbers_in_the_stacks(char *numbers)
 {

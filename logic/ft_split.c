@@ -6,9 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:33:17 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/19 14:34:41 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:43:28 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../headers/push_swap.h"
 
 static void	ft_freeup(char *strs)
 {

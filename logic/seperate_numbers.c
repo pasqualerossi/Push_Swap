@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 12:20:44 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/20 12:47:30 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/21 15:50:18 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 void	free_string(char **str)
 {
@@ -45,7 +45,7 @@ int	numbers_input(long *stack_a, int *numbers_in_stack_a, char **argv, char**num
 		stack_a[i] = ft_atoi(numbers_list[i]);
 		i++;
 	}
-	freestring(numbers_list);
+	free_string(numbers_list);
 	free(numbers_list);
 	return (0);
 }
@@ -86,7 +86,7 @@ int	seperating_input_numbers(long *stack_a, int *numbers_in_stack_a, char **argv
 	}
 	if (repeated_numbers(stack_a, numbers_in_stack_a[1]) == -1)
 		return (-1);
-	if (number_limits(stack_a, numbers_in_stack_a[1] == -1)
+	if (number_limits(stack_a, numbers_in_stack_a[1] == -1))
 			return (-1);
 	return (0);
 }
