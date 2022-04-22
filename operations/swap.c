@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 10:56:16 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 14:30:37 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:11:28 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	swap_stack_a(long *stack_a, int *numbers_in_stack_a)
 		stack_a[1] = temporary[0];
 	}
 	free(temporary);
-	write(1, "swap stack A\n", 13);
+	write(1, "Swap Stack A\n", 13);
 }
 
 void	swap_stack_b(long *stack_b, int *numbers_in_stack_b)
@@ -39,7 +39,7 @@ void	swap_stack_b(long *stack_b, int *numbers_in_stack_b)
 		stack_b[1] = temporary[0];
 	}
 	free(temporary);
-	write(1, "swap stack B\n", 13);
+	write(1, "Swap Stack B\n", 13);
 }
 
 void	swap_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
@@ -60,5 +60,5 @@ void	swap_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stac
 		stack_b[1] = temporary[0];
 	}
 	free(temporary);
-	write(1, "swap stack A and stack B at the same time\n", 42);
+	write(1, "Swap both Stack A and Stack B\n", 42);
 }

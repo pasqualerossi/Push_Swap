@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 10:56:10 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 14:26:53 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:10:25 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	reserve_rotate_stack_a(long *stack_a, int *numbers_in_stack_a)
 	}
 	stack_a[0] = *temporary;
 	free(temporary);
-	write(1, "reserve rotate stack A\n", 23);
+	write(1, "Reverse Rotate Stack A\n", 23);
 }
 
 void	reserve_rotate_stack_b(long *stack_b, int *numbers_in_stack_b)
@@ -45,7 +45,7 @@ void	reserve_rotate_stack_b(long *stack_b, int *numbers_in_stack_b)
 	}
 	stack_b[0] = *temporary;
 	free(temporary);
-	write(1, "reserve rotate stack B\n", 23);
+	write(1, "Reverse Rotate Stack B\n", 23);
 }
 
 void	reserve_rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
@@ -71,5 +71,5 @@ void	reserve_rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbe
 	}
 	stack_b[*numbers_in_stack_b - 1] = *temporary;
 	free(temporary);
-	write(1, "reserve rotate stack A and stack B at the same time\n", 52);
+	write(1, "Reserve Rotate both Stack A and Stack B\n", 52);
 }

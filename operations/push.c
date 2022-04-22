@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 10:56:01 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 14:26:30 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:10:48 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	push_stack_a(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *nu
 	(*numbers_in_stack_b)--;
 	if (*numbers_in_stack_b == 0)
 		stack_b = NULL;
-	write(1, "push stack A\n", 13);
+	write(1, "Push Stack A\n", 13);
 }
 
 void	push_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
@@ -57,5 +57,5 @@ void	push_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *nu
 	(numbers_in_stack_a[1])--;
 	if (numbers_in_stack_a[1] == 0)
 		stack_a = NULL;
-	write(1, "push stack B\n", 13);
+	write(1, "Push Stack B\n", 13);
 }

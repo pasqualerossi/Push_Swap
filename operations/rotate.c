@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 11:42:27 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 14:27:00 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:09:23 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	rotate_stack_a(long *stack_a, int *numbers_in_stack_a)
 	}
 	stack_a[numbers_in_stack_a[1] - 1] = *temporary;
 	free(temporary);
-	write(1, "rotate stack A\n", 15);
+	write(1, "Rotate Stack A\n", 15);
 }
 
 void	rotate_stack_b(long *stack_b, int *numbers_in_stack_b)
@@ -45,7 +45,7 @@ void	rotate_stack_b(long *stack_b, int *numbers_in_stack_b)
 	}
 	stack_b[*numbers_in_stack_b - 1] = *temporary;
 	free(temporary);
-	write(1, "rotate stack B\n", 15);
+	write(1, "Rotate Stack B\n", 15);
 }
 
 void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
@@ -71,5 +71,5 @@ void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_st
 	}
 	stack_b[*numbers_in_stack_b - 1] = *temporary;
 	free(temporary);
-	write(1, "rotate stack A and stack B at the same time\n", 44);
+	write(1, "Rotate both Stack A and Stack B\n", 44);
 }
