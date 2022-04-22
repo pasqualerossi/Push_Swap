@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 10:56:01 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/19 12:21:15 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 14:26:30 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "../headers/push_swap.h"
 
 void	push_stack_a(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {

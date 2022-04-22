@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 16:12:42 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/21 15:45:56 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 14:25:59 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	sort_a_section_of_the_stack(long *array, int *stack_size)
 	while (i < stack_size[0])
 	{
 		j = i + 1;
-		while (j < size[0])
+		while (j < stack_size[0])
 		{
 			if (array[i] > array[j])
 			{
@@ -48,6 +48,7 @@ void	swap_stack_a_first_time(long *copy, long *copy_swap_stack_a, long *stack_a,
 		copy_swap_stack_a[i] = stack_a[i];
 		i++;
 	}
+}
 
 void	swap_stack_a_second_time(long *copy, long *copy_swap_stack_a, long *stack_a, int *numbers_in_stack_a)
 {
@@ -61,7 +62,7 @@ void	swap_stack_a_second_time(long *copy, long *copy_swap_stack_a, long *stack_a
 		j = 0;
 		while (j < numbers_in_stack_a[0])
 		{
-			if (copy_swap_stack_a[i] == copy[j]
+			if (copy_swap_stack_a[i] == copy[j])
 					stack_a[i] = j;
 			j++;
 		}
@@ -73,7 +74,7 @@ void	swap_stack_a_third_time(long *stack_a, long *stack_b, int *numbers_in_stack
 {
 	int	maximum_number;
 	int	maximum_bits;
-	int	loop_through;
+	int	loop_through[2];
 
 	maximum_number = numbers_in_stack_a[1] - 1;
 	maximum_bits = 0;
@@ -105,10 +106,10 @@ void	sort_beyond_3_and_5_numbers(long *stack_a, long *stack_b, int *numbers_in_s
 
 	copy = (long *)malloc(numbers_in_stack_a[0] * sizeof(long));
 	copy_swap_stack_a = (long *)malloc(numbers_in_stack_a[0] * sizeof(long));
-	swap_stack_a_first_time(long *copy, long *copy_swap_stack_a, long *stack_a, int *numbers_in_stack_a);
-	sort_a_section_of_the_stack(long *array, int *stack_size);
-	swap_stack_a_second_time(long *copy, long *copy_swap_stack_a, long *stack_a, int *numbers_in_stack_a);
+	swap_stack_a_first_time(copy, copy_swap_stack_a, stack_a, numbers_in_stack_a);
+	sort_a_section_of_the_stack(copy, numbers_in_stack_a);
+	swap_stack_a_second_time(copy, copy_swap_stack_a, stack_a, numbers_in_stack_a);
 	free(copy);
 	free(copy_swap_stack_a);
-	swap_stack_a_third_time(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
+	swap_stack_a_third_time(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
 }

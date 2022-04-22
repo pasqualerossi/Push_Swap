@@ -6,11 +6,11 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:23:09 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/21 13:13:39 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 14:45:45 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./headers/push_swap.h"
+#include "headers/push_swap.h"
 
 void	free_and_exit(int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
@@ -29,8 +29,8 @@ void	free_and_exit_without_errors(int *numbers_in_stack_a, int *numbers_in_stack
 
 void check_parameters(int argc, char **argv, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
-	int		i;
-	size_t	j;
+	int	i;
+	int	j;
 
 	i = 1;
 	j = 0;
