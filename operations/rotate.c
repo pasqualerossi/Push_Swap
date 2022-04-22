@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 11:42:27 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 15:09:23 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:54:23 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	rotate_stack_a(long *stack_a, int *numbers_in_stack_a)
 	i = 0;
 	temporary = (long *)malloc(sizeof(long));
 	*temporary = stack_a[0];
-	while (i <numbers_in_stack_a[1])
+	while (i < numbers_in_stack_a[1])
 	{
 		stack_a[i] = stack_a[i + 1];
 		i++;

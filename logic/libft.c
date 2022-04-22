@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 14:28:32 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/21 15:44:19 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:58:31 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_strlen(const char *str)
 	i = 0;
 	while (str[i])
 		i++;
-	return(i);
+	return (i);
 }
 
 int	ft_isdigit(int i)

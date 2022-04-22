@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 10:56:16 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 15:11:28 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:55:46 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void	swap_stack_a(long *stack_a, int *numbers_in_stack_a)
 
 void	swap_stack_b(long *stack_b, int *numbers_in_stack_b)
 {
-	long *temporary;
-	
+	long	*temporary;
+
 	temporary = (long *)malloc(sizeof(long));
 	if (*numbers_in_stack_b > 1)
 	{
@@ -44,7 +44,7 @@ void	swap_stack_b(long *stack_b, int *numbers_in_stack_b)
 
 void	swap_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
-	long *temporary;
+	long	*temporary;
 
 	temporary = (long *)malloc(sizeof(long));
 	if (numbers_in_stack_a[1] > 1)

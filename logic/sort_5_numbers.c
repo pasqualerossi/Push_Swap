@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 14:00:57 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 15:22:10 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 16:08:15 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,7 @@ void	first_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *num
 void	second_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
 	if (stack_b[0] < stack_a[0])
-	{
 		push_stack_a(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-	}
 	else if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
 	{
 		rotate_stack_a(stack_a, numbers_in_stack_a);
@@ -76,9 +74,7 @@ void	second_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *nu
 		rotate_stack_a_radix(stack_a, numbers_in_stack_a);
 	}
 	else if (stack_b[0] > stack_a[3])
-	{
 		parameters(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-	}
 }
 
 void	sort_5_numbers(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)

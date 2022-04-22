@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/20 12:20:44 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 15:18:16 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 16:00:23 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,6 @@ int	seperating_input_numbers(long *stack_a, int *numbers_in_stack_a, char **argv
 	if (repeated_numbers(stack_a, numbers_in_stack_a[1]) == -1)
 		return (-1);
 	if (number_limits(stack_a, numbers_in_stack_a[1] == -1))
-			return (-1);
+		return (-1);
 	return (0);
 }

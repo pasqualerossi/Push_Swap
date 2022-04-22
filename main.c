@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:23:09 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 14:45:45 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:57:05 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	free_and_exit_without_errors(int *numbers_in_stack_a, int *numbers_in_stack
 	exit(0);
 }
 
-void check_parameters(int argc, char **argv, int *numbers_in_stack_a, int *numbers_in_stack_b)
+void	check_parameters(int argc, char **argv, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
 	int	i;
 	int	j;
@@ -46,7 +46,7 @@ void check_parameters(int argc, char **argv, int *numbers_in_stack_a, int *numbe
 			if (((argv[i][j] < 48) || (argv[i][j] > 57)) && (argv[i][j] != 32))
 			{
 				if (argv[i][j] != 45)
-							free_and_exit_without_errors(numbers_in_stack_a, numbers_in_stack_b);
+					free_and_exit_without_errors(numbers_in_stack_a, numbers_in_stack_b);
 			}
 			if ((argv[i][j] == 32) && (argv[i][j + 1] == 32))
 				free_and_exit_without_errors(numbers_in_stack_a, numbers_in_stack_b);

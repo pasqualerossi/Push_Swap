@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:11:13 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/22 15:16:17 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 16:11:15 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	**ft_split(char const *str, char c);
 
 int		number_limits(long *stack_a, int numbers_in_stack_a);
 int		repeated_numbers(long *stack_a, int numbers_in_stack_a);
-int     is_only_numbers_in_the_stacks(char *numbers);
+int		is_only_numbers_in_the_stacks(char *numbers);
 int		stack_size(int argc, char **argv);
 int		numbers_input(long *stack_a, int *numbers_in_stack_a, char **argv, char**numbers_list);
 int		standard_input(long *stack_a, int *numbers_in_stack_a, char **argv);
@@ -63,7 +63,7 @@ int		is_stack_sorted(long *stack_a, int *numbers_in_stack_a);
 
 void	free_string(char **str);
 void	free_stacks(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
-void    ft_reallocation(long *pointer, int startsize, int newsize);
+void	ft_reallocation(long *pointer, int startsize, int newsize);
 void	parameters(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
 //sort 3 numbers in stack a
