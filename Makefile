@@ -20,7 +20,7 @@ SOURCES  = 	main.c \
 		   ./logic/sort_beyond_3_and_5_numbers.c \
 		   ./logic/stack_size.c \
 		   ./operations/push.c \
-		   ./operations/reserve.c \
+		   ./operations/reverse.c \
 		   ./operations/rotate.c \
 		   ./operations/swap.c \
 

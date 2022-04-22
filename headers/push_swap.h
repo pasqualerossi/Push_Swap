@@ -6,7 +6,7 @@
 /*   By: prossi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 12:11:13 by prossi            #+#    #+#             */
-/*   Updated: 2022/04/21 16:00:01 by prossi           ###   ########.fr       */
+/*   Updated: 2022/04/22 15:16:17 by prossi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ void	rotate_stack_a(long *stack_a, int *numbers_in_stack_a);
 void	rotate_stack_b(long *stack_b, int *numbers_in_stack_b);
 void	rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
-//rra (reverse rotate stack a), rrb (reserve rotate stack b) and rrr (reserve rotate both stack a and stack b at the same time)
+//rra (reverse rotate stack a), rrb (reverse rotate stack b) and rrr (reverse rotate both stack a and stack b at the same time)
 
-void	reserve_rotate_stack_a(long *stack_a, int *numbers_in_stack_a);
-void	reserve_rotate_stack_b(long *stack_b, int *numbers_in_stack_b);
-void	reserve_rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
+void	reverse_rotate_stack_a(long *stack_a, int *numbers_in_stack_a);
+void	reverse_rotate_stack_b(long *stack_b, int *numbers_in_stack_b);
+void	reverse_rotate_stack_a_and_stack_b(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
 //libft (all libft functions required for this project)
 
@@ -74,7 +74,7 @@ void	sort_3_numbers(long *stack_a, int *numbers_in_stack_a);
 
 void	sort_5_numbers(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 void	rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a);
-void	reserve_rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a);
+void	reverse_rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a);
 void	first_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 void	second_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b);
 
