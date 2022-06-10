@@ -1,6 +1,6 @@
 # Push_Swap Project
 
-Not completed, still editing the code. 
+Not completed yet, still editing the code. 
 
 # Push_Swap Tester
 
