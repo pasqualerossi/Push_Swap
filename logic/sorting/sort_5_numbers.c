@@ -27,9 +27,7 @@ void	reverse_rotate_stack_a_radix(long *stack_a, int *numbers_in_stack_a)
 void	first_stack(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *numbers_in_stack_b)
 {
 	if (stack_b[0] < stack_a[0])
-	{
 		push_stack_a(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-	}
 	else if ((stack_b[0] > stack_a[0]) && (stack_b[0] < stack_a[1]))
 	{
 		rotate_stack_a(stack_a, numbers_in_stack_a);
@@ -85,12 +83,8 @@ void	sort_5_numbers(long *stack_a, long *stack_b, int *numbers_in_stack_a, int *
 	while (*numbers_in_stack_b != 0)
 	{
 		if (numbers_in_stack_a[1] == 3)
-		{	
 			first_stack(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-		}
 		else if (numbers_in_stack_a[1] == 4)
-		{
 			second_stack(stack_a, stack_b, numbers_in_stack_a, numbers_in_stack_b);
-		}
 	}
 }
